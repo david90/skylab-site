@@ -1,5 +1,6 @@
 # Skylab Website
 
+![Main Page](https://user-images.githubusercontent.com/1916493/49353823-c8727000-f6fa-11e8-82f1-49f67c0f4c9d.png)
 
 ### Update Content
 
