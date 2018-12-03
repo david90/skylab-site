@@ -7,6 +7,8 @@
 The content is written with Jade templating language.
 Please reference the [Jade Syntax](https://naltatis.github.io/jade-syntax-docs/) for correct syntax.
 
+For home page structure, please edit: `themes/react/_config.yml`
+
 For config, please edit: `_config.yml`
 
 For data, please edit yml filesin : `source/_data`
@@ -40,14 +42,14 @@ Update theme:
 $ npm run reload
 ```
 
+which is a composition of the following command:
+
 ```
-$ gulp sass;gulp build:css;
+$ gulp sass;gulp build:css; gulp jade;
 ```
+
+To watch to changes as well:
 
 ```
 $ gulp watch
-```
-
-```
-$ gulp jade
 ```
