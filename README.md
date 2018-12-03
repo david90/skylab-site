@@ -4,8 +4,14 @@
 
 ### Update Content
 
-The content is written with Jade templating language
+The content is written with Jade templating language.
 Please reference the [Jade Syntax](https://naltatis.github.io/jade-syntax-docs/) for correct syntax.
+
+For config, please edit: `_config.yml`
+
+For data, please edit yml filesin : `source/_data`
+
+For blog posts and project, please edit md files in: `source/_posts`
 
 ### Installation
 
