@@ -1,0 +1,78 @@
+section#contact.contact.scrollspy
+    .container
+        h2: span Contact
+        h3 Send us a message
+        .row.send-message
+            .col.s12.l8.offset-l2
+                if (formType=='human')
+                    #human-form.card-panel.center.hoverable
+                        .row
+                            .col.s12
+                                p.flow-text
+                                    | Hey Skylab,
+                                    br
+                                    | My name is&nbsp;
+                                    span#name-human(contenteditable='true', width='30')
+                                    |,
+                                    | you can reach me via&nbsp;
+                                    span#contact-human(contenteditable='true', data-position='top', data-delay='10', data-tooltip='Email or phone number').tooltipped
+                                    |.
+                                p.flow-text
+                                    span#message-human(contenteditable='true') Here's my request, I would like to...
+                                button#send-message-human.btn.btn-large.btn-flat.waves-effect.waves-light Send
+                else if (formType=='classic')
+                    .card-panel.center.hoverable
+                        form#classic-form.row(action='mailer/mailer.php', novalidate, autocomplete='off')
+                            .col.s12.l6
+                                .input-field
+                                    input#name-classic.validate(type='text', name='name')
+                                    label(for='name-classic') Name
+                            .col.s12.l6
+                                .input-field
+                                    input#contact-classic.validate(type='email', name='email')
+                                    label(for='contact-classic') Email
+                            .col.s12
+                                .input-field
+                                    textarea#message-classic.materialize-textarea(name='message')
+                                    label(for='message-classic') Enquiry detail
+                            button#send-message-classic.btn.btn-large.btn-flat.waves-effect.waves-light(type='submit') Send
+
+        .row.contact-details
+            .col.s12.l4
+                h3.left-align Reach us
+                .divider
+                h4.left-align Hong Kong
+                address
+                    | Unit 10B, 11 Cheung Shun St, Cheung Sha Wan
+                    br
+                    | Hong Kong
+                    br
+                a(href='https://goo.gl/maps/mV8zNAqgUNt', target='_blank') Get directions
+                    i.fa.fa-external-link
+                h4.left-align Taipei
+                address
+                    | Rm 2, 6F., No.60, Fuxing N. Rd., Zhongshan Dist., 
+                    br
+                    | Taipei City 104, Taiwan (R.O.C.)
+                    br
+                a(href='https://goo.gl/maps/QFB13sSg59B2', target='_blank') Get directions
+                    i.fa.fa-external-link
+
+            .col.s12.l4
+                h3.left-align Contact
+                .divider
+                p
+                    | Hong Kong: +852 2155 9299 (Office) +852 3020 0215 (Fax)
+                    br
+                    | Taipei: +886 02-27400130 (Office)
+                    br
+                    a(href='mailto:skylab@oursky.com') skylab@oursky.com
+            .col.s12.l4
+                h3.left-align Also find us on
+                .divider
+                p.im
+                    i.fa.fa-facebook
+                    a(href='https://facebook.com/oursky.hk') oursky.hk
+                    br
+                    i.fa.fa-twitter
+                    a(href='https://twitter.com/@oursky') @oursky

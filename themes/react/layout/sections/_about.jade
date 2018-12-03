@@ -1,0 +1,23 @@
+include ../mixins/about
+
+section#about.about.scrollspy
+    .container
+        h2: span About
+        p We're excited to announce the launch of <a href="https://oursky.com">Oursky</a>'s AI division, Skylab.ai. After several years of working on custom machine learning client projects, we have formalized our AI specialists into a team to focus on building algorithms and training neural networks to help businesses analyze and utilize large-scale data in a short amount of time. We've compiled a list of machine learning projects that we've done to help you understand the common uses and techniques involved.
+        .row
+            // About general photo
+            +general-photo
+
+            // About carousel
+            .owl-carousel.owl-theme.col.s12.l6
+                each star, i in site.data['stars']
+                    +star(star, i)
+                .col.s12
+                    .rectangle.grey.lighten-3
+                        .content.valign-wrapper.you
+                            .name You?
+                                br
+                                a(href='mailto:skylab@oursky.com?subject=Job%20Application') Apply now
+
+            each star, i in site.data['stars']
+                +detail(star, i)

@@ -1,0 +1,45 @@
+# There are two type of menu link:
+#    1. Jump to current page anchor, simple leave the external-link blank.
+#    2. Open link in a new tab, please put the full url in the external-link field.
+# To hide a menu, leave the display-name blank.
+menu:
+  about:
+    display-name: About
+    external-link:
+  projects:
+    display-name: Projects
+    external-link:
+  services:
+    display-name: Services
+    external-link:
+  # blog:
+  #   display-name: Blog
+  #   external-link: https://blog.oursky.com/
+  contact:
+    display-name: Contact
+    external-link:
+  
+# show the subscribe area
+# default false
+subscribe: false
+
+# Available themes:
+#        combustion-purple
+#        combustion-yellow
+#        fuzzy-hue
+#        fuzzy-saturation
+#        ring-blue
+#        ring-green
+#        tunnel
+#        waves-deep-purple
+#        waves-light-blue
+theme: oursky
+
+# default general photo for about section
+general-photo: "./assets/images/team/whiteboard.jpg"
+
+# default featured image for posts
+featured: "./img/default-new-blog.jpg"
+
+# default background image for posts
+background: "./img/default-background.jpg"
